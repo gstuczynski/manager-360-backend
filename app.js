@@ -21,7 +21,7 @@ app.get('/all-images', (req, res) => {
     if(err){
       res.status(500).send("Something went wrong")
     }else {
-      res.sendStatus(200)
+      res.send(files)
     }
   })
 })
